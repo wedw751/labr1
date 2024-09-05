@@ -1,0 +1,35 @@
+﻿@Model IEnumerable<labr1.Models.Customers>
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>1</h3>
+    <table>
+        <tr class="header">
+            <td><p> Ім'я </p></td>
+            <td><p> Прізвище </p></td>
+            <td><p> Дата народження </p></td>
+            <td><p> Пошта </p></td>
+            <td><p> Телефон </p></td>
+            <td><p> Кредитний ліміт </p></td>
+            <td><p> Непогашений кредит </p></td>
+        </tr>
+        @foreach (labr1.Models.Customers b in Model)
+            {
+                <tr>
+                    <td><p>@b.FirstName</p></td>
+                    <td><p>@b.LastName</p></td>
+                    <td><p>@b.DateOfBirth</p></td>
+                    <td><p>@b.Email</p></td>
+                    <td><p>@b.PhoneNumber</p></td>
+                    <td><p>@b.CreditLimit</p></td>
+                    <td><p>@b.CreditOutstanding</p></td>
+                    <td><p><a href="/Home/Pay/@b.CustomerID">Погасити</a></p></td>
+                </tr>   
+
+            }
+    </table>
+</div>
+    
+    
+</labr1.Models.Customers>

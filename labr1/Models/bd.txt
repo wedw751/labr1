@@ -1,0 +1,18 @@
+﻿CREATE TABLE [dbo].[Customers] (
+    CustomerID INT NOT NULL IDENTITY,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    Email NVARCHAR(100),
+    PhoneNumber NVARCHAR(15),
+    CreditLimit DECIMAL(10, 2) NOT NULL DEFAULT 0.00,
+    CreditOutstanding DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY CLUSTERED ([CustomerID] ASC)
+);
+
+CREATE TABLE [dbo].[Payment] (
+    PaymentID INT PRIMARY KEY IDENTITY(1,1),
+    CustomerID INT NOT NULL,
+    PaymentAmount DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATE NOT NULL
+);
