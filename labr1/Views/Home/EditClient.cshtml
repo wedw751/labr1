@@ -1,0 +1,67 @@
+﻿@{ 
+    ViewBag.Title = "Редагувати користувача";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model labr1.Models.Customers
+
+<h2>Користувач № @Model.CustomerID</h2>
+@using (Html.BeginForm("EditClient", "Home", FormMethod.Post))
+            {
+                <fieldset>
+                    @Html.HiddenFor(m => m.CustomerID)
+                    <p>
+                        @Html.LabelFor(m => m.FirstName, "Ім'я користувача")
+                        <br />
+                        @Html.EditorFor(m => m.FirstName)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.LastName, "Прізвище користувача")
+                        <br />
+                        @Html.EditorFor(m => m.LastName)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.DateOfBirth, "Дата народження 1/1/1990")
+                        <br />
+                        @Html.EditorFor(m => m.DateOfBirth)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.Email, "Пошта користувача")
+                        <br />
+                        @Html.EditorFor(m => m.Email)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.PhoneNumber, "Телефон користувача")
+                        <br />
+                        @Html.EditorFor(m => m.PhoneNumber)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.CreditLimit, "Кредитний ліміт користувача")
+                        <br />
+                        @Html.EditorFor(m => m.CreditLimit)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.CreditOutstanding, "Кредитна заборгованість")
+                        <br />
+                        @Html.EditorFor(m => m.CreditOutstanding)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.Role, "Посада")
+                        <br />
+                        @Html.EditorFor(m => m.Role)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.Password, "Пароль користувача")
+                        <br />
+                        @Html.EditorFor(m => m.Password)
+                    </p>
+                    <p>
+                        @Html.LabelFor(m => m.Login, "Логін користувача")
+                        <br />
+                        @Html.EditorFor(m => m.Login)
+                    </p>
+                    <p><input type="submit" value="Відправити" /></p>
+
+
+                </fieldset>
+            }    

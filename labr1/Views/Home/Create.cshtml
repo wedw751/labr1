@@ -1,0 +1,64 @@
+﻿@model labr1.Models.Customers
+
+@{
+    ViewBag.Title = "Додати користувача";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Новий користувач </h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.FirstName, "Ім'я користувача")
+        <br />
+        @Html.EditorFor(model => model.FirstName)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.LastName, "Прізвище користувача")
+        <br />
+        @Html.EditorFor(model => model.LastName)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.DateOfBirth, "Дата народження користувача")
+        <br />
+        @Html.EditorFor(model => model.DateOfBirth)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.Email, "Пошта користувача")
+        <br />
+        @Html.EditorFor(model => model.Email)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.PhoneNumber, "Телефон користувача")
+        <br />
+        @Html.EditorFor(model => model.PhoneNumber)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.CreditLimit, "Кредитний ліміт")
+        <br />
+        @Html.EditorFor(model => model.CreditLimit)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.CreditOutstanding, "Заборгованість")
+        <br />
+        @Html.EditorFor(model => model.CreditOutstanding)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.Role, "Посада")
+        <br />
+        @Html.EditorFor(model => model.Role)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.Password, "Пароль")
+        <br />
+        @Html.EditorFor(model => model.Password)
+        <br />
+        <br />
+    @Html.LabelFor(model => model.Login, "Логін")
+        <br />
+        @Html.EditorFor(model => model.Login)
+        <br />
+        <br />
+        <input type="submit" value="Добавити" />
+
+}

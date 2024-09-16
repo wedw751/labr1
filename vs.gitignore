@@ -1,0 +1,6 @@
+echo ".vs/" >> .gitignore
+echo "*.dll" >> .gitignore
+echo "*.pdb" >> .gitignore
+echo "*.ldf" >> .gitignore
+echo "*.mdf" >> .gitignore
+echo "*.cache" >> .gitignore

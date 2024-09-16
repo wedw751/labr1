@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\KB\\web\\labr1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|e:\\kb\\web\\labr1\\labr1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|e:\\kb\\web\\labr1\\labr1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\views\\home\\editclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\views\\home\\editclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\views\\home\\pay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\views\\home\\pay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__KB_WEB_LABR1_LABR1_APP_DATA_BANKAPP.MDF/True/SqlTable/dbo.Customers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__KB_WEB_LABR1_LABR1_APP_DATA_BANKAPP.MDF/True/SqlTable/dbo.Payment.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\models\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\models\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\models\\bankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\models\\bankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|E:\\KB\\web\\labr1\\labr1\\models\\bd.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9E595A20-A853-4592-A5A3-DA49845212BB}|labr1\\labr1.csproj|solutionrelative:labr1\\models\\bd.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Global.asax.cs",
+              "RelativeDocumentMoniker": "labr1\\Global.asax.cs",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Global.asax.cs",
+              "RelativeToolTip": "labr1\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T07:31:22.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Delete.cshtml",
+              "RelativeDocumentMoniker": "labr1\\Views\\Home\\Delete.cshtml",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Delete.cshtml",
+              "RelativeToolTip": "labr1\\Views\\Home\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T13:47:20.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Customers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__KB_WEB_LABR1_LABR1_APP_DATA_BANKAPP.MDF/True/SqlTable/dbo.Customers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__KB_WEB_LABR1_LABR1_APP_DATA_BANKAPP.MDF/True/SqlTable/dbo.Customers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-06T12:03:37.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditClient.cshtml",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\EditClient.cshtml",
+              "RelativeDocumentMoniker": "labr1\\Views\\Home\\EditClient.cshtml",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\EditClient.cshtml",
+              "RelativeToolTip": "labr1\\Views\\Home\\EditClient.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T11:51:47.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "labr1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "labr1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T21:44:49.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pay.cshtml",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Pay.cshtml",
+              "RelativeDocumentMoniker": "labr1\\Views\\Home\\Pay.cshtml",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Pay.cshtml",
+              "RelativeToolTip": "labr1\\Views\\Home\\Pay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T07:32:35.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "labr1\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "labr1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwE8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T12:11:09.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "labr1\\Views\\Home\\Create.cshtml",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "labr1\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:22:22.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.Payment.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__KB_WEB_LABR1_LABR1_APP_DATA_BANKAPP.MDF/True/SqlTable/dbo.Payment.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__KB_WEB_LABR1_LABR1_APP_DATA_BANKAPP.MDF/True/SqlTable/dbo.Payment.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-06T12:03:12.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customers.cs",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Models\\Customers.cs",
+              "RelativeDocumentMoniker": "labr1\\Models\\Customers.cs",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Models\\Customers.cs",
+              "RelativeToolTip": "labr1\\Models\\Customers.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T20:23:27.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BankContext.cs",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Models\\BankContext.cs",
+              "RelativeDocumentMoniker": "labr1\\Models\\BankContext.cs",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Models\\BankContext.cs",
+              "RelativeToolTip": "labr1\\Models\\BankContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T20:38:23.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\favicon.ico",
+              "RelativeDocumentMoniker": "labr1\\favicon.ico",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "RelativeToolTip": "labr1\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2024-09-05T21:52:02.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "bd.txt",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Models\\bd.txt",
+              "RelativeDocumentMoniker": "labr1\\Models\\bd.txt",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Models\\bd.txt",
+              "RelativeToolTip": "labr1\\Models\\bd.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-05T21:49:40.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\KB\\web\\labr1\\labr1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "labr1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\KB\\web\\labr1\\labr1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "labr1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T21:37:33.231Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

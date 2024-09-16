@@ -24,5 +24,11 @@ namespace labr1.Models
         public decimal CreditLimit { get; set; }
 
         public decimal CreditOutstanding { get; set; }
+
+        public string Role { get; set; }
+
+        public string Password { get; set; }
+
+        public string Login { get; set; }
     }
 }

@@ -8,10 +8,14 @@ namespace labr1.Models
 {
     public class BankContext : DbContext
     {
-        internal object Bankapp;
+        public BankContext() {
+            this.Database.Log = null;
+        }
 
         public DbSet<Customers> Customers1 { get; set; }
 
         public DbSet<Payment> Payments { get; set; }
+
     }
+
 }

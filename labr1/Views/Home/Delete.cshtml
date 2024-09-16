@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model labr1.Models.Customers
+
+<h2>Видалення користувача</h2>
+<dl>
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.FirstName)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.LastName)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.DateOfBirth)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Email)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.PhoneNumber)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.CreditLimit)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.CreditOutstanding)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Role)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Password)
+    </dd>
+
+    <dt>Назва</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Login)
+    </dd>
+</dl>
+
+@using (Html.BeginForm())
+            {
+                <input type="submit" value="Видалити" />
+            }
