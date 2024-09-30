@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,10 +13,77 @@ namespace labr1.Controllers
     {
         BankContext db = new BankContext();
 
-        public ActionResult Index()
+        public ActionResult Index(string credit, string login, string sortOrder)
         {
-            return View(db.Customers1);
+            var customers = db.Customers1.AsQueryable();
+
+            // Фільтрація за кредитом
+            if (!string.IsNullOrEmpty(credit))
+            {
+                customers = customers.Where(c => c.Credits.Any(cr => cr.Name == credit));
+            }
+
+            // Фільтрація за логіном
+            if (!string.IsNullOrEmpty(login))
+            {
+                customers = customers.Where(c => c.Login == login);
+            }
+
+            // Сортування за непогашеним кредитом
+            switch (sortOrder)
+            {
+                case "asc":
+                    customers = customers.OrderBy(c => c.CreditOutstanding);
+                    break;
+                case "desc":
+                    customers = customers.OrderByDescending(c => c.CreditOutstanding);
+                    break;
+                default:
+                    break;
+            }
+
+            // Підготовка моделі для представлення
+            var model = new CustomerListViewModel
+            {
+                Customers = customers.ToList(),
+                Credits = new SelectList(db.Credits.ToList(), "Name", "Name"),
+                Login = new SelectList(db.Customers1.ToList(), "Login", "Login")
+            };
+
+            return View(model);
         }
+
+
+
+        public ActionResult Details(int CustomerId = 0)
+        {
+            Customers customers = db.Customers1.Find(CustomerId);
+
+            if (customers == null)
+            {
+                return HttpNotFound();
+            }
+            return View(customers);
+        }
+
+        public ActionResult Filter(string credit, string login)
+        {
+            var customers = db.Customers1.AsQueryable();
+
+            if (!string.IsNullOrEmpty(credit))
+            {
+                customers = customers.Where(c => c.Credits.Any(cr => cr.Name == credit));
+            }
+
+            if (!string.IsNullOrEmpty(login))
+            {
+                customers = customers.Where(c => c.Login == login);
+            }
+
+            return View("Index", customers.ToList());
+        }
+
+
 
         [HttpGet]
         public ActionResult Pay(int CustomerID)
@@ -49,14 +117,28 @@ namespace labr1.Controllers
             Customers customers = db.Customers1.Find(CustomerId);
             if (customers != null)
             {
+                ViewBag.Credits = db.Credits.ToList();
                 return View(customers);
             }
             return HttpNotFound();
         }
         [HttpPost]
-        public ActionResult EditClient(Customers customers)
+        public ActionResult EditClient(Customers customers, int[] selectedCredits)
         {
-            db.Entry(customers).State = EntityState.Modified;
+            Customers newcustomers = db.Customers1.Find(customers.CustomerID);
+            newcustomers.FirstName = customers.FirstName;
+            newcustomers.LastName = customers.LastName;
+
+            newcustomers.Credits.Clear();
+            if(selectedCredits != null)
+            {
+                foreach (var c in db.Credits.Where(co=>selectedCredits.Contains(co.CreditId)))
+                {
+                    newcustomers.Credits.Add(c);
+                }
+            }
+
+            db.Entry(newcustomers).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
         }

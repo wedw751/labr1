@@ -2,8 +2,8 @@
     ViewBag.Title = "Редагувати користувача";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@model labr1.Models.Customers
+@using labr1.Models
+@model Customers
 
 <h2>Користувач № @Model.CustomerID</h2>
 @using (Html.BeginForm("EditClient", "Home", FormMethod.Post))
@@ -60,6 +60,15 @@
                         <br />
                         @Html.EditorFor(m => m.Login)
                     </p>
+
+                    <div class="editor-label"><b>Кредити</b></div>
+                    @foreach (Credits c in ViewBag.Credits)
+                    {
+                        <input type="checkbox" name="selectedCredits" value="@c.CreditId"
+                               @(Model.Credits.Contains(c) ? "checked=\"checked\"" : "") />@c.Name <br />
+
+                    }
+
                     <p><input type="submit" value="Відправити" /></p>
 
 

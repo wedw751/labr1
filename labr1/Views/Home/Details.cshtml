@@ -1,0 +1,29 @@
+﻿@using labr1.Models
+@model Customers
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<fieldset>
+    <legend>Інформація про кредити </legend>
+
+    <div class="display-label"><b>Ім'я</b></div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label"><b>Прізвище</b></div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastName)    
+    </div>
+
+    <div class="display-label"><b>Кредити</b></div>
+    <ul>
+        @foreach (Credits c in Model.Credits)
+            {
+                <li>@c.Name</li>
+            }
+    </ul>
+    </fieldset>
+

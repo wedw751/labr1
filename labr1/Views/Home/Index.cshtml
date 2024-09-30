@@ -1,11 +1,33 @@
-﻿@model IEnumerable<labr1.Models.Customers>
+﻿@using labr1.Models
+@model CustomerListViewModel
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div>
     <h3>Список клієнтів</h3>
 
-        <a href="@Url.Action("Create", "Home")">Додати</a>
+    <p><a href="@Url.Action("Create", "Home")">Додати</a></p>
+
+    <form method="get">
+        <div class="form-inline">
+            <label class="control-label">Кредит: </label>
+            @Html.DropDownList("credit", Model.Credits, "Виберіть кредит", new { @class = "form-control" })
+
+            <label class="control-label">Логін користувача: </label>
+            @Html.DropDownList("login", Model.Login, "Виберіть логін", new { @class = "form-control" })
+
+            <label class="control-label">Сортувати за непогашеним кредитом: </label>
+            <select name="sortOrder" class="form-control">
+                <option value="">Виберіть</option>
+                <option value="asc">По зростанню</option>
+                <option value="desc">По спаданню</option>
+            </select>
+
+            <input type="submit" value="Фільтр" class="btn btn-default" />
+        </div>
+    </form>
+
     <table>
         <tr class="header">
             <td>Ім'я</td>
@@ -17,7 +39,7 @@
             <td>Непогашений кредит</td>
         </tr>
 
-        @foreach (var customer in Model)
+        @foreach (var customer in Model.Customers)
         {
             <tr>
                 <td>@customer.FirstName</td>
@@ -36,10 +58,10 @@
                 <td>
                     <a href="@Url.Action("Delete", "Home", new { CustomerID = customer.CustomerID })">Видалити</a>
                 </td>
+                <td>
+                    <a href="@Url.Action("Details", "Home", new { CustomerID = customer.CustomerID })">Детальніше</a>
+                </td>
             </tr>
         }
     </table>
 </div>
-
-
-

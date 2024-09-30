@@ -30,5 +30,11 @@ namespace labr1.Models
         public string Password { get; set; }
 
         public string Login { get; set; }
+
+        public virtual ICollection<Credits> Credits { get; set; }
+        public Customers()
+        {
+            Credits = new List<Credits>(); 
+        }
     }
 }
